@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-12">
+        <button type="button" (click)="getRandomName()" class="btn btn-primary my-3">
+            Get random name
+        </button>
+    </div>
+    <h2 class="col-12">{{ randomName }}</h2>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <button type="button" (click)="addName()" class="btn btn-primary my-3">
+            Add name
+        </button>
+    </div>
+    <input type="text" [(ngModel)]="newName" />
+</div>
